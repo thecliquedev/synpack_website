@@ -1,0 +1,65 @@
+.counter-container {
+  background-color: black;
+}
+
+.counter img {
+  width: 120px;
+  padding: 20px;
+}
+
+.quality-bar {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+
+.quality-title {
+  padding: 20px 100px;
+}
+.quality-bar img {
+  width: 40px;
+}
+
+.locations {
+  background-color: #fff;
+  color: #000;
+}
+
+.location-container {
+  background: url(../img/design/7Asset\ 5.png);
+  background-size: cover;
+}
+
+.contact-row {
+  margin: 100px 0px;
+}
+
+.since-text {
+  font-size: 4rem;
+  -webkit-text-stroke: 1px red;
+  background-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: transparent;
+}
+
+.product-container {
+  background-color: red;
+}
+
+.product-title {
+  display: flex;
+  font-weight: 900 !important;
+  padding: 50px 100px;
+}
+.product-title span {
+  font-weight: 100 !important;
+  padding: 0px 20px;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 70%;
+  margin: auto;
+}
