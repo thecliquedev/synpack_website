@@ -131,3 +131,30 @@
     font-size: 1rem;
   }
 }
+
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  bottom: 40px; /* Adjust the positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-dot {
+  position: relative;
+  width: 10px; /* Adjust the dot size as needed */
+  height: 10px;
+  margin: 0 5px; /* Adjust the spacing between dots as needed */
+  background-color: #000000; /* Set the dot color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.owl-carousel .owl-dot.active {
+  background-color: #fff;
+  padding: 5px;
+  border: 2px solid #000000;
+}

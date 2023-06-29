@@ -76,17 +76,32 @@
 
 
     // Header carousel
+    // $(".header-carousel").owlCarousel({
+    //     autoplay: false,
+    //     smartSpeed: 1500,
+    //     items: 1,
+    //     dots: false,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="bi bi-chevron-left"></i>',
+    //         '<i class="bi bi-chevron-right"></i>'
+    //     ]
+    // });
     $(".header-carousel").owlCarousel({
         autoplay: false,
-        smartSpeed: 1500,
+        smartSpeed: 2000,
+        stagePadding: 0,
         items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
+        loop:true,
+        margin:0,
+        singleItem:true,
+        nav:true,
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
-        ]
+        ],
+        dots:true
     });
 
 
