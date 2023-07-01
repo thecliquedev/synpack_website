@@ -104,6 +104,31 @@
         dots:true
     });
 
+    $('.owl-carousel.products').owlCarousel({
+        loop:true,
+        margin:15,
+        nav:true,
+        smartSpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        autoplayTimeout: 5000,
+        navText: [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({

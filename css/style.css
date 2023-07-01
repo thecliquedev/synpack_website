@@ -192,37 +192,46 @@ body{
     }
 } */
 
-.header-carousel .owl-nav {
+.header-carousel .owl-nav,
+.products .owl-nav {
     position: absolute;
     top: 50%;
     width: 100%;
-    /* right: 8%; */
+    left: 0;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
 }
 
 .header-carousel .owl-nav .owl-prev,
-.header-carousel .owl-nav .owl-next {
+.header-carousel .owl-nav .owl-next,
+.products .owl-nav .owl-prev,
+.products .owl-nav .owl-next{
     margin: 7px 10px;
     width: 45px;
     height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #fff !important;
     /* background: var(--primary); */
-    background: black;
-    border: 1px solid #000000;
+    background: black !important;
+    border: 1px solid #000000 !important;
     border-radius: 45px;
     font-size: 22px;
     transition: .5s;
 }
 
+.products .owl-nav .owl-prev,
+.products .owl-nav .owl-next{
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 
 .page-header {

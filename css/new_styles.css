@@ -202,7 +202,7 @@
 
 .owl-carousel .owl-dots {
   position: absolute;
-  bottom: 40px; /* Adjust the positioning as needed */
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -215,13 +215,63 @@
   width: 10px; /* Adjust the dot size as needed */
   height: 10px;
   margin: 0 5px; /* Adjust the spacing between dots as needed */
-  background-color: #000000; /* Set the dot color */
+  background-color: #000000 !important; /* Set the dot color */
   border-radius: 50%;
   cursor: pointer;
 }
 
 .owl-carousel .owl-dot.active {
-  background-color: #fff;
+  background-color: #fff !important;
   padding: 5px;
+  transform: scale(1.5);
   border: 2px solid #000000;
+}
+
+.product-row{
+  padding: 30px 0px;
+}
+
+.products .owl-item{
+  padding: 30px auto;
+}
+
+.products .owl-dots {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .owl-dot {
+  position: relative;
+  width: 10px; /* Adjust the dot size as needed */
+  height: 10px;
+  margin: 0 5px; /* Adjust the spacing between dots as needed */
+  background-color: #000000 !important; /* Set the dot color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.products .owl-dot.active {
+  background-color: #ff3e41 !important;
+  padding: 5px;
+  transform: scale(1.5);
+  border: 1px solid #000000;
+}
+
+.products .owl-item{
+  transform: scale(0.75);
+  margin: 10px 0px ;
+}
+.products .active ~ .active:not(.active ~ .active ~ .active) {
+  transform: scale(1);
+  filter: blur(0px);
+  box-shadow: 0px 2px 20px rgb(217, 217, 217);
+}
+
+.products .owl-dots .owl-dot span{
+  display: none;
 }
